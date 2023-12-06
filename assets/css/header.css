@@ -1,0 +1,71 @@
+.logo{
+    /* aligner au centre du haut de page avec une petite marge entre le haut de la page et le menu */
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Pour centrer l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div{
+    /* Pour centrer l'image */
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-bottom: 2%;
+}
+
+i{
+    font-size: 50px;
+    margin-right: 10%;
+}
+
+
+nav{
+    background-color: #F7E7EF;
+    border-bottom: 1px solid #eee;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    min-width: 30%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+li{
+    /* Aligner les liens au centre de la page */
+    display: inline-block;
+    text-align: center;
+    /* Garder les liens sur la même ligne */
+    white-space: nowrap;
+    margin: 0 30px;
+    padding: 0 5;
+    /* Faire ne sorte que ça ne dépasse pas l'écran */
+    overflow: hidden;
+
+}
+
+a{
+    display: block;
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
