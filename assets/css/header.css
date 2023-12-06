@@ -1,8 +1,8 @@
-.logo{
+#logo{
     /* aligner au centre du haut de page avec une petite marge entre le haut de la page et le menu */
     margin: 10px auto;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     overflow: hidden;
     /* Pour centrer l'image */
@@ -21,7 +21,8 @@ header div{
 
 i{
     font-size: 50px;
-    margin-right: 10%;
+    margin-right: 2%;
+    margin-top: 75px;
 }
 
 
@@ -30,7 +31,7 @@ nav{
     border-bottom: 1px solid #eee;
     height: 60px;
     line-height: 60px;
-    position: fixed;
+    position: static;
     width: 100%;
     z-index: 1000;
     min-width: 30%;
