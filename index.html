@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Lien des dépendance CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/indexm.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/headerm.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <!-- Fin des liens CSS -->
     <!-- Titre de la page -->
@@ -16,11 +20,12 @@
 </head>
 
 <!-- Début du corp de la page -->
+
 <body>
     <header>
         <!-- Logo site -->
         <div>
-            <img id="logo" src="./assets/imgs/logo.png" alt="Logo site" srcset="">
+            <img id="header_logo" src="./assets/imgs/logo.png" alt="Logo site" srcset="">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
         <!-- Menu de navigation avec les liens menant aux articles de la page -->
@@ -28,8 +33,8 @@
             <ul>
                 <li><a href="#galerie">La Galerie</a></li>
                 <li><a href="#artiste">Artistes</a></li>
-                <li><a href="#">Les Oeuvres</a></li>
-                <li><a href="#">Boutique</a></li>
+                <li><a href="#oeuvre">Les Oeuvres</a></li>
+                <li><a href="#boutique">Boutique</a></li>
                 <li><a href="#">Inscriptions</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -42,23 +47,30 @@
             <img src="./assets/imgs/expo.JPG" alt="image de l'exposition">
             <div class="text">
                 <p>
-                    Depuis 30 ans DEDAL DES COULEURS By DECHEWSKY, c’est la passion & l’originalité pour tous. Chaque année, nous réalisons une exposition d’art avec comme mot d’orde; LE PARTAGE. Notre équipe à la joie de vous écouter pour toute demande de participation à nos expositions via nos contact présents sur la page.
+                    Depuis 30 ans DEDAL DES COULEURS By DECHEWSKY, c’est la passion & l’originalité pour tous. Chaque
+                    année, nous réalisons une exposition d’art avec comme mot d’orde; LE PARTAGE. Notre équipe à la joie
+                    de vous écouter pour toute demande de participation à nos expositions via nos contact présents sur
+                    la page.
                 </p>
                 <p>
-                    Nous mettons en avant nos Artistes de L’expressionisme que vous aurez la joie de retrouver un peu plus bas sur la page, afin de vous offrir de bon moments de découverte de l’Art sous diverses formes.
+                    Nous mettons en avant nos Artistes de L’expressionisme que vous aurez la joie de retrouver un peu
+                    plus bas sur la page, afin de vous offrir de bon moments de découverte de l’Art sous diverses
+                    formes.
                 </p>
                 <p>
-                    Pour vous simplifier l’achat de nos oeuvres, nous avons mis à disposition pour vous une boutique d’achat.
+                    Pour vous simplifier l’achat de nos oeuvres, nous avons mis à disposition pour vous une boutique
+                    d’achat.
                 </p>
                 <p>
-                    “Tous les arts sont comme des miroirs où l’homme connaît et reconnait quelque chose de lui même qu’il ignorait” ALAIN
+                    “Tous les arts sont comme des miroirs où l’homme connaît et reconnait quelque chose de lui même
+                    qu’il ignorait” ALAIN
                 </p>
             </div>
         </article>
         <!-- Fin de l'article -->
 
         <!-- Deuxième article de la catégorie artistes -->
-        <p class="title_category">Nos fabuleux Artistes de l'Expressionisme</p><br/>
+        <p class="title_artiste">Nos fabuleux Artistes de l'Expressionisme</p><br />
         <article id="artiste">
             <div class="superpimgs">
                 <img class="soutineimg" src="./assets/imgs/oeuvre_soutine.JPG" alt="Oeuvre de Soutine">
@@ -66,12 +78,64 @@
                 <p>Chaïme Soutine & sa version villageoise de “la maison blanche” une huile sur toile ( 65x50 cm)</p>
             </div>
             <div>
-                <p>Ou encore Marc Chagall qui nous accorde un moment de tendresse avec sa toile nommée “ La naissance”</p>
+                <p>Ou encore Marc Chagall qui nous accorde un moment de tendresse avec sa toile nommée “ La naissance”
+                </p>
             </div>
         </article>
         <!-- Fin de l'article -->
+        <!-- Début de l'article des oeuvres -->
+        <p class="title_oeuvre">Nos Oeuvres Phares</p><br />
+        <article id="oeuvre">
+            <div class="peinture">
+                <img src="./assets/imgs/strength_of_society.JPG" alt="Oeuvre strength of society" srcset="">
+                <p class="titleo">“ Strength of society”</p>
+                <p class="descrio">Une oeuvre centrée sur la nostalgie et le rappel quant au fait qu’une société se porte bien quand les
+                    foyers sont solide</p>
+            </div>
+            <div class="peinture">
+                <img src="./assets/imgs/texture.JPG" alt="Oeuvre Texture">
+                <p class="titleo">TEXTURE</p>
+                <p class="descrio">Une Toile qui met en avant l’aspect textural des différentes peintures utilisées</p>
+            </div>
+            <div class="peinture">
+                <img src="./assets/imgs/foret_des_lavandes.JPG" alt="Oeuvre Forêt de lavande">
+                <p class="titleo">“La Forêt au lavandes”</p>
+
+                <p class="descrio">Un ère de fraîcheur, avec cette magnifique oeuvre réalisé lors d’un séjour en montages.</p>
+            </div>
+        </article>
+        <!-- Fin de l'article des oeuvres -->
+        <!-- Début de l'article de la boutique -->
+        <article id="boutique">
+            <div class="boutique">
+                <p class="titleb">Nos Toiles Disponibles à La Vente</p>
+                <div class="toileb">
+                    <img src="./assets/imgs/melimelo_couleurs.JPG" alt="Méli mélo de couleurs">
+                    <p class="titleb">mélimélo de couleurs</p>
+                    <p class="describ">Acrylique sur Toile<br/>
+                        160x100cm</p>
+                        <p class="prixb">510€</p>
+                </div>
+                <div class="toileb">
+                    <img src="./assets/imgs/the_skyscrapper.JPG" alt="The skyscrapper">
+                    <p class="titleb">“The skyscrapper”</p>
+                    <p class="describ">Huile sur Toile<br/>
+                        36x34cm</p>
+                        <p class="prixb">680€</p>
+                </div>
+                <div class="toileb">
+                    <img src="./assets/imgs/la_main_de_l_espoir.JPG" alt="La Main De L'espoir">
+                    <p class="titleb">La main de l’Espoir</p>
+                    <p class="describ">Huile sur Toile<br/>
+                        134x120cm</p>
+                        <p class="prixb">1230€</p>
+                </div>
+                
+            </div>
+        </article>
+        <!-- Fin de l'article de la boutique -->
     </div>
-    <!-- Fin de la div globale -->
+    <!-- Fin de l'article globale -->
     <!-- Footer de la page -->
     <footer>
         <div class="footer">
@@ -79,10 +143,10 @@
             <p>Adresse : 10 Rue De La Republique</p>
             <p>Code Postal : 75000 PARIS</p><br>
             <p>Contactez-nous : </p><br>
-            <p>Tel : <a href="tel:+33 01.63.45.85.56">01.63.45.85.56</a></p>
+            <p>Tel : 01.63.45.85.56</p>
             <p>Fax : 01.63.45.78.52</p><br>
             <p>Email : <a href="mailto:dedal@gmail.com">dedal@gmail.com</a> </p><br><br>
-            <img id="logo" src="./assets/imgs/logo.png" alt="" srcset="">
+            <img id="footer_logo" src="./assets/imgs/logo.png" alt="" srcset="">
         </div>
     </footer>
     <!-- Fin du footer de la page -->

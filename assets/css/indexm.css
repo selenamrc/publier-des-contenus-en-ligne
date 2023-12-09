@@ -1,0 +1,48 @@
+/* Écran de téléphone */
+@media screen and (max-width: 768px) {
+
+    #galerie {
+        /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+        padding: 30px;
+    }
+
+    img {
+        margin: 10px;
+        width: 75%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .peinture {
+        /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .peinture img {
+        width: 75%;
+        height: auto;
+        position: relative;
+    }
+
+    .toileb {
+        /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toileb img {
+        width: 75%;
+        height: auto;
+        position: relative;
+    }
+}

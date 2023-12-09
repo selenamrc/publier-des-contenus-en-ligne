@@ -1,12 +1,12 @@
 /* Supression de toutes les marges de la page pour éviter les décalages au niveau des bordures */
-*{
+* {
     margin: 0;
     padding: 0;
     /* overflow-x: hidden; */
 }
 
 /* Classe global pour le contenu de la page */
-#main{
+#main {
     /* Marge de 30 pixel du haut de la page pour éviter que le contenu soit trop près du menu de navigation */
     margin-top: 30px;
     /* Faire en responsive et aligner les items de la division au centre */
@@ -15,42 +15,43 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 /* Fin de la classe global */
 
 
 /* Propriété des articles */
-article{
-    /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+article {
     /* width: 100%; */
     /* Bordures pour me repérer sur les alignements */
     border: #000 1px solid;
 }
 
-#galerie{
+#galerie {
+    /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
     padding: 30px;
 }
 
 
-img{
+img {
     width: 20%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.text{
+.text {
     width: 70%;
     padding-left: 20px;
-    
+
 }
 
-p{
+p {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
@@ -58,13 +59,14 @@ p{
     letter-spacing: 1px;
     color: #000;
 }
-.title_category{
+
+.title_artiste {
     text-align: center;
     font-size: 20px;
     background-color: beige;
 }
 
-#artiste{
+#artiste {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,23 +74,89 @@ p{
     flex-wrap: wrap;
     background-color: beige;
 }
-.superpimgs{
+
+.superpimgs {
     width: 100%;
     /* height: 100vh; */
     position: relative;
 }
 
-.soutineimg{
+.soutineimg {
     width: 50%;
     height: auto;
     position: relative;
 }
 
-.soutineimg:nth-child(1){
+.soutineimg:nth-child(1) {
     margin-top: 5%;
     margin-left: 30px;
 }
-.soutineimg:nth-child(2){
+
+.soutineimg:nth-child(2) {
     margin-top: 5%;
     margin-left: 30px;
+}
+
+
+.title_oeuvre {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#oeuvre {
+    /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleo{
+    /* Texte gras taille de texte 20 pixels */
+    font-size: 20px;
+    font-weight: bold;
+    /* Couleur du texte en noir */
+    color: #000;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+    padding: 30px;
+}
+
+.descrio{
+    /* Taille de texte 14 pixels */
+    font-size: 14px;
+    /* Couleur du texte en noir */
+    color: #000;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+    padding: 30px;
+}
+
+.titleb{
+    /* Texte gras taille de texte 20 pixels */
+    font-size: 20px;
+    font-weight: bold;
+    /* Couleur du texte en noir */
+    color: #000;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.describ{
+    /* Taille de texte 14 pixels */
+    font-size: 14px;
+    /* Couleur du texte en noir */
+    color: #000;
+    text-align: justify;
+}
+
+.prixb{
+    /* Texte gras taille de texte 20 pixels */
+    font-size: 20px;
+    font-weight: bold;
+    /* Couleur du texte en noir */
+    color: #000;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+    padding-bottom: 30px;
+    text-align: justify;
 }

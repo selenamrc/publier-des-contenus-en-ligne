@@ -8,6 +8,19 @@ footer {
     margin: 10px auto;
 }
 
+#footer_logo{
+    /* aligner au centre du haut de page avec une petite marge entre le haut de la page et le menu */
+    margin: 10px auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Pour centrer l'image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .foter {
     padding: 20px;
 }
