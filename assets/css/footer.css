@@ -1,0 +1,13 @@
+footer {
+    background-color: #F1F1F1;
+    border-top: 1px solid #eee;
+    position: static;
+    width: 100%;
+    min-width: 30%;
+    bottom: 0;
+    margin: 10px auto;
+}
+
+.foter {
+    padding: 20px;
+}
