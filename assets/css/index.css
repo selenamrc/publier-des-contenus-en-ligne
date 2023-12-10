@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /* Classe global pour le contenu de la page */
@@ -39,6 +39,7 @@ article {
 }
 
 
+
 img {
     width: 20%;
     object-fit: cover;
@@ -53,7 +54,7 @@ img {
 
 p {
     font-size: 14px;
-    font-weight: 600;
+    font-weight:initial;
     text-align: center;
     /* text-transform: uppercase; */
     letter-spacing: 1px;
@@ -73,28 +74,26 @@ p {
     align-items: center;
     flex-wrap: wrap;
     background-color: beige;
+    width: 100%;
+    padding-left: 30%;
 }
 
 .superpimgs {
     width: 100%;
-    /* height: 100vh; */
+    height: 100%;
     position: relative;
 }
 
-.soutineimg {
-    width: 50%;
+.superp {
+    width: 20%;
     height: auto;
     position: relative;
 }
 
-.soutineimg:nth-child(1) {
-    margin-top: 5%;
-    margin-left: 30px;
-}
-
-.soutineimg:nth-child(2) {
-    margin-top: 5%;
-    margin-left: 30px;
+.superp:first-child {
+    transform: translate(100px, 120px);
+    /* Mettre l'image en arrière plan */
+    z-index: 1;
 }
 
 
@@ -107,8 +106,9 @@ p {
 #oeuvre {
     /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -131,7 +131,31 @@ p {
     padding: 30px;
 }
 
+#boutique{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+}
+
+#boutique img{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
 .titleb{
+    /* Texte gras taille de texte 20 pixels */
+    font-size: 20px;
+    font-weight:normal;
+    /* Couleur du texte en noir */
+    color: #000;
+    /* Marges intérieur de l'article a 30 pixels du bord de l'article */
+    padding: 30px;
+}
+
+.titleo{
     /* Texte gras taille de texte 20 pixels */
     font-size: 20px;
     font-weight: bold;
@@ -139,7 +163,7 @@ p {
     color: #000;
     /* Marges intérieur de l'article a 30 pixels du bord de l'article */
     padding-top: 30px;
-    text-align: justify;
+    text-align: left;
 }
 
 .describ{
@@ -147,7 +171,7 @@ p {
     font-size: 14px;
     /* Couleur du texte en noir */
     color: #000;
-    text-align: justify;
+    text-align: left;
 }
 
 .prixb{
@@ -158,5 +182,5 @@ p {
     color: #000;
     /* Marges intérieur de l'article a 30 pixels du bord de l'article */
     padding-bottom: 30px;
-    text-align: justify;
+    text-align: left;
 }

@@ -26,6 +26,9 @@
         margin-top: 45px;
     }
 
+    #burger {
+        display: block;
+    }
 
     nav {
         background-color: #F7E7EF;
@@ -36,6 +39,7 @@
         width: 100%;
         z-index: 1000;
         min-width: 30%;
+        display: none;
     }
 
     ul {
@@ -45,6 +49,7 @@
         justify-content: center;
         align-items: center;
         list-style: none;
+        display: none;
 
     }
 
@@ -70,5 +75,9 @@
         font-weight: 600;
         letter-spacing: 1px;
         transition: all 0.3s ease;
+    }
+
+    #menu-icon:checked + .menu + .menu ul {
+        display: block;
     }
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
     <!-- Lien des dépendance CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/headerm.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
     <!-- Fin des liens CSS -->
     <!-- Titre de la page -->
     <title>index</title>
@@ -23,20 +25,27 @@
 
 <body>
     <header>
-        <!-- Logo site -->
+        <!-- Logo site + icones -->
         <div>
+            <!-- checkbox pour le menu burger -->
+            <label id="burger" for="menu-icon">&#9776;</label>
+            <input type="checkbox" id="menu-icon">
             <img id="header_logo" src="./assets/imgs/logo.png" alt="Logo site" srcset="">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
+        <!-- fin du logo site + icones -->
+        
+
         <!-- Menu de navigation avec les liens menant aux articles de la page -->
-        <nav>
+
+        <nav class="menu">
             <ul>
                 <li><a href="#galerie">La Galerie</a></li>
                 <li><a href="#artiste">Artistes</a></li>
                 <li><a href="#oeuvre">Les Oeuvres</a></li>
                 <li><a href="#boutique">Boutique</a></li>
-                <li><a href="#">Inscriptions</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#form">Inscriptions</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -73,13 +82,14 @@
         <p class="title_artiste">Nos fabuleux Artistes de l'Expressionisme</p><br />
         <article id="artiste">
             <div class="superpimgs">
-                <img class="soutineimg" src="./assets/imgs/oeuvre_soutine.JPG" alt="Oeuvre de Soutine">
-                <img class="soutineimg" src="./assets/imgs/portrait_soutine.JPG" alt="Portrait de Soutine">
+                <img class="superp" src="./assets/imgs/oeuvre_soutine.JPG" alt="Oeuvre de Soutine">
+                <img class="superp" src="./assets/imgs/portrait_soutine.JPG" alt="Portrait de Soutine">
                 <p>Chaïme Soutine & sa version villageoise de “la maison blanche” une huile sur toile ( 65x50 cm)</p>
             </div>
-            <div>
-                <p>Ou encore Marc Chagall qui nous accorde un moment de tendresse avec sa toile nommée “ La naissance”
-                </p>
+            <div class="superpimgs">
+                <img class="superp" src="./assets/imgs/oeuvre_chagall.JPG" alt="Portrait de Soutine">
+                <img class="superp" src="./assets/imgs/chagall_portrait.JPG" alt="Oeuvre de Soutine">
+                <p>Ou encore Marc Chagall qui nous accorde un moment de tendresse avec sa toile nommée “ La naissance”</p>
             </div>
         </article>
         <!-- Fin de l'article -->
@@ -89,7 +99,8 @@
             <div class="peinture">
                 <img src="./assets/imgs/strength_of_society.JPG" alt="Oeuvre strength of society" srcset="">
                 <p class="titleo">“ Strength of society”</p>
-                <p class="descrio">Une oeuvre centrée sur la nostalgie et le rappel quant au fait qu’une société se porte bien quand les
+                <p class="descrio">Une oeuvre centrée sur la nostalgie et le rappel quant au fait qu’une société se
+                    porte bien quand les
                     foyers sont solide</p>
             </div>
             <div class="peinture">
@@ -101,43 +112,55 @@
                 <img src="./assets/imgs/foret_des_lavandes.JPG" alt="Oeuvre Forêt de lavande">
                 <p class="titleo">“La Forêt au lavandes”</p>
 
-                <p class="descrio">Un ère de fraîcheur, avec cette magnifique oeuvre réalisé lors d’un séjour en montages.</p>
+                <p class="descrio">Un ère de fraîcheur, avec cette magnifique oeuvre réalisé lors d’un séjour en
+                    montages.</p>
             </div>
         </article>
         <!-- Fin de l'article des oeuvres -->
         <!-- Début de l'article de la boutique -->
+        <p class="titleb">Nos Toiles Disponibles à La Vente</p>
         <article id="boutique">
-            <div class="boutique">
-                <p class="titleb">Nos Toiles Disponibles à La Vente</p>
-                <div class="toileb">
-                    <img src="./assets/imgs/melimelo_couleurs.JPG" alt="Méli mélo de couleurs">
-                    <p class="titleb">mélimélo de couleurs</p>
-                    <p class="describ">Acrylique sur Toile<br/>
-                        160x100cm</p>
-                        <p class="prixb">510€</p>
-                </div>
-                <div class="toileb">
-                    <img src="./assets/imgs/the_skyscrapper.JPG" alt="The skyscrapper">
-                    <p class="titleb">“The skyscrapper”</p>
-                    <p class="describ">Huile sur Toile<br/>
-                        36x34cm</p>
-                        <p class="prixb">680€</p>
-                </div>
-                <div class="toileb">
-                    <img src="./assets/imgs/la_main_de_l_espoir.JPG" alt="La Main De L'espoir">
-                    <p class="titleb">La main de l’Espoir</p>
-                    <p class="describ">Huile sur Toile<br/>
-                        134x120cm</p>
-                        <p class="prixb">1230€</p>
-                </div>
-                
+            <!-- <div class="boutique"> -->
+            <div class="toileb">
+                <img src="./assets/imgs/melimelo_couleurs.JPG" alt="Méli mélo de couleurs">
+                <p class="titleo">mélimélo de couleurs</p>
+                <p class="describ">Acrylique sur Toile<br />
+                    160x100cm</p>
+                <p class="prixb">510€</p>
             </div>
+            <div class="toileb">
+                <img src="./assets/imgs/the_skyscrapper.JPG" alt="The skyscrapper">
+                <p class="titleo">“The skyscrapper”</p>
+                <p class="describ">Huile sur Toile<br />
+                    36x34cm</p>
+                <p class="prixb">680€</p>
+            </div>
+            <div class="toileb">
+                <img src="./assets/imgs/la_main_de_l_espoir.JPG" alt="La Main De L'espoir">
+                <p class="titleo">La main de l’Espoir</p>
+                <p class="describ">Huile sur Toile<br />
+                    134x120cm</p>
+                <p class="prixb">1230€</p>
+            </div>
+
+            <!-- </div> -->
         </article>
         <!-- Fin de l'article de la boutique -->
+        <div id="form">
+            <label for="name">Nom/Prénom</label>
+            <input type="text" name="nom/prenom" id="name">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="ex:dechewsky@otlook.fr">
+            <label for="pass">Mot de passe</label>
+            <input type="password" name="password" id="pass">
+            <p class="formu">Les informations recueillis sur ce formulaire, sont enregistrées dans un fichier
+                informatisé par l’entreprise Dechewsky pour vous apporter les meilleures offres & actualités. </p>
+            <input type="submit" value="envoyer">
+        </div>
     </div>
     <!-- Fin de l'article globale -->
     <!-- Footer de la page -->
-    <footer>
+    <footer id="contact">
         <div class="footer">
             <p>Dedal Des Couleurs</p><br><br>
             <p>Adresse : 10 Rue De La Republique</p>

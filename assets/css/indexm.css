@@ -18,6 +18,54 @@
         border-radius: 5px;
     }
 
+    #artiste {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: beige;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .superp {
+        width: 30%;
+        height: auto;
+        position: relative;
+    }
+
+    /* .soutineimg:first-child {
+        transform: translate(100px, 120px);
+        Mettre l'image en arrière plan
+        z-index: 1;
+    }
+    .soutineimg:last-child {
+        transform: translate(100px, 120px);
+        Mettre l'image en arrière plan
+        z-index: 0;
+    } */
+/* Superpose moi les images comme il faut  */
+    .superp:first-child {
+        transform: translate(100px, 120px);
+        /* Mettre l'image en arrière plan */
+        z-index: 1;
+    }
+    /* Fais en sorte que la div n'ai pas de scroll et que le texte soit bien sous les images */
+    .superp:last-child {
+        transform: translate(100px, 120px);
+        /* Mettre l'image en arrière plan */
+        z-index: 0;
+    }
+
+    #oeuvre {
+        /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .peinture {
         /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
         display: flex;
@@ -30,6 +78,16 @@
         width: 75%;
         height: auto;
         position: relative;
+    }
+
+
+
+    #boutique {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
     }
 
     .toileb {
