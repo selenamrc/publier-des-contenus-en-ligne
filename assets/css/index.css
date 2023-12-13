@@ -20,14 +20,6 @@
 
 /* Fin de la classe global */
 
-
-/* Propriété des articles */
-article {
-    /* width: 100%; */
-    /* Bordures pour me repérer sur les alignements */
-    border: #000 1px solid;
-}
-
 #galerie {
     /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre */
     display: flex;
@@ -40,7 +32,7 @@ article {
 
 
 
-img {
+.galerie {
     width: 20%;
     object-fit: cover;
     border-radius: 5px;
@@ -75,27 +67,54 @@ p {
     flex-wrap: wrap;
     background-color: beige;
     width: 100%;
+    height: 100%;
     padding-left: 30%;
 }
 
 .superpimgs {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
+    padding: 0;
+    overflow-y: hidden;
 }
 
-.superp {
-    width: 20%;
+
+.superps {
+    width: 10%;
     height: auto;
     position: relative;
 }
 
-.superp:first-child {
-    transform: translate(100px, 120px);
+.superps:first-child {
+    transform: translate(75px, 145px);
     /* Mettre l'image en arrière plan */
     z-index: 1;
 }
 
+.superps:last-child {
+    transform: translate(-2%, -25%);
+    /* Mettre l'image en arrière plan */
+    z-index: 0;
+}
+
+.superpc {
+    width: 15%;
+    height: auto;
+    position: relative;
+}
+
+.superpc:first-child {
+    transform: translate(100%, 50%);
+    /* Mettre l'image en arrière plan */
+    z-index: 1;
+}
+
+.superpc:last-child {
+    transform: translate(40%, 20%);
+    /* Mettre l'image en arrière plan */
+    z-index: 0;
+}
 
 .title_oeuvre {
     text-align: center;
@@ -110,6 +129,30 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.peinture {
+    width: 50%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.peinture img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.lavande {
+    width: 50%;
+    height: auto;
+    position: relative;
+    padding: 30px;
+    text-align: center;
 }
 
 .titleo{

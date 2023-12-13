@@ -29,33 +29,49 @@
         padding-left: 0;
     }
 
-    .superp {
+    .superps {
         width: 30%;
         height: auto;
         position: relative;
     }
 
-    /* .soutineimg:first-child {
-        transform: translate(100px, 120px);
-        Mettre l'image en arrière plan
-        z-index: 1;
-    }
-    .soutineimg:last-child {
-        transform: translate(100px, 120px);
-        Mettre l'image en arrière plan
-        z-index: 0;
-    } */
-/* Superpose moi les images comme il faut  */
-    .superp:first-child {
-        transform: translate(100px, 120px);
+    
+    /* Superposition des images */
+    .superps:first-child {
+        transform: translate(100%, 90%);
         /* Mettre l'image en arrière plan */
         z-index: 1;
     }
+
     /* Fais en sorte que la div n'ai pas de scroll et que le texte soit bien sous les images */
-    .superp:last-child {
-        transform: translate(100px, 120px);
+    .superps:last-child {
+        transform: translate(40%, 20%);
         /* Mettre l'image en arrière plan */
         z-index: 0;
+    }
+
+
+    .superpc {
+        width: 20%;
+        height: auto;
+        position: relative;
+    }
+    .superpc:first-child {
+        transform: translate(100%, 50%);
+        /* Mettre l'image en arrière plan */
+        z-index: 1;
+    }
+    
+    .superpc:last-child {
+        transform: translate(40%, 20%);
+        /* Mettre l'image en arrière plan */
+        z-index: 0;
+    }
+    
+    .superpc:first-child {
+        transform: translate(100%, 50%);
+        /* Mettre l'image en arrière plan */
+        z-index: 1;
     }
 
     #oeuvre {
@@ -65,19 +81,28 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .peinture {
         /* Comme pour la class main, faire en sorte que ce soit responsive avec l'alignement des items au centre et en collones */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     .peinture img {
-        width: 75%;
+        width: 100%;
         height: auto;
         position: relative;
+    }
+
+    .lavande {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 30px;
+        text-align: justify;
     }
 
 

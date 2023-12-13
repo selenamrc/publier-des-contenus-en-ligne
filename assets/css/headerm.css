@@ -12,8 +12,8 @@
         align-items: center;
     }
 
+    /* Pour centrer l'icone */
     header div {
-        /* Pour centrer l'image */
         display: flex;
         justify-content: right;
         align-items: right;
@@ -25,45 +25,31 @@
         margin-right: 10%;
         margin-top: 45px;
     }
-
+/* Afficher l'icone du burger-menu */
     #burger {
         display: block;
+        margin-top: 50px;
+        /* Mettre la souris en pointeur */
+        cursor: pointer;
     }
+    /* Adatation du menu pour l'afficher sur le coté gauche de la page en menu burger */
 
-    nav {
-        background-color: #F7E7EF;
-        border-bottom: 1px solid #eee;
-        height: 60px;
-        line-height: 60px;
-        position: static;
-        width: 100%;
-        z-index: 1000;
-        min-width: 30%;
-        display: none;
-    }
-
-    ul {
-        margin: 0;
+    .menu {
+        float: none;
         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        display: none;
-
+        margin: 0;
+        width: 100%;
+        background-color: #F7E7EF;
+        min-width: 30%;
     }
 
-    li {
+    .menu li {
         /* Aligner les liens au centre de la page */
-        display: inline-block;
+        display: block;
         text-align: center;
-        /* Garder les liens sur la même ligne */
-        white-space: nowrap;
-        margin: 0 30px;
-        padding: 0 5;
-        /* Faire ne sorte que ça ne dépasse pas l'écran */
-        overflow: hidden;
-
+        float: none;
+        list-style-type: list-item;
+        padding: 0 30px;
     }
 
     a {
@@ -75,9 +61,5 @@
         font-weight: 600;
         letter-spacing: 1px;
         transition: all 0.3s ease;
-    }
-
-    #menu-icon:checked + .menu + .menu ul {
-        display: block;
     }
 }
