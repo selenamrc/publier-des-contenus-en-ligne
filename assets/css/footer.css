@@ -21,6 +21,7 @@ footer {
     align-items: center;
 }
 
-.foter {
+.footer {
+    /* marge interne de 20 pixels */
     padding: 20px;
 }

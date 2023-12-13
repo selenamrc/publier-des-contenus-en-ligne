@@ -1,7 +1,8 @@
-/* Supression de toutes les marges de la page pour éviter les décalages au niveau des bordures */
 * {
+    /* Supression de toutes les marges de la page pour éviter les décalages au niveau des bordures */
     margin: 0;
     padding: 0;
+    /* Supression du scroll de gauche a droite */
     overflow-x: hidden;
 }
 
@@ -9,8 +10,9 @@
 #main {
     /* Marge de 30 pixel du haut de la page pour éviter que le contenu soit trop près du menu de navigation */
     margin-top: 30px;
-    /* Faire en responsive et aligner les items de la division au centre */
+    /* Taille de la page en responsive */
     max-width: 100%;
+    /* Faire en responsive et aligner les items de la division au centre */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,22 +35,24 @@
 
 
 .galerie {
+    /* Taille de l'image a 20% de sa taille originale */
     width: 20%;
-    object-fit: cover;
+    /* Arrondissement des bords */
     border-radius: 5px;
 }
 
 .text {
+    /* Taille de la div 70% de la page complète */
     width: 70%;
+    /* Rétrécissement de la marge intérieur de 20 pixels */
     padding-left: 20px;
-
 }
 
 p {
+    /* Stylisation du texte */
     font-size: 14px;
     font-weight:initial;
     text-align: center;
-    /* text-transform: uppercase; */
     letter-spacing: 1px;
     color: #000;
 }
@@ -76,7 +80,6 @@ p {
     height: auto;
     position: relative;
     padding: 0;
-    overflow-y: hidden;
 }
 
 

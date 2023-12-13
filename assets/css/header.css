@@ -5,6 +5,7 @@
 #burger {
     display: none;
 }
+/* Taille d'écran suppérieur a 768 pixels */
 @media screen and (min-width: 768px) {
     #header_logo {
         /* aligner au centre du haut de page avec une petite marge entre le haut de la page et le menu */
@@ -29,13 +30,17 @@
     }
 
     i {
+        /* Taille de l'incone de 75 pixels */
         font-size: 50px;
+        /* Marge droite de 2% */
         margin-right: 2%;
+        /* Marge du haut de 75 pixels */
         margin-top: 75px;
     }
 
 
     ul {
+        /* Modification de la couleur et alignements multiples */
         background-color: #F7E7EF;
         border-bottom: 1px solid #eee;
         height: 60px;
